@@ -1,0 +1,11 @@
+div > h1{
+    text-align: center;
+    padding: 30px;
+    border-bottom: 2px solid #cecece;
+}
+
+li{
+    list-style-type: none;
+    font-size: small;
+    padding: 15px;
+}

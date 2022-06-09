@@ -1,0 +1,14 @@
+.head{
+    text-align: center;
+    text-shadow: 2px 2px 2px #cecece;
+    margin: 50px;
+}
+
+.foot{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.btn{
+    padding:10px 40px;
+}

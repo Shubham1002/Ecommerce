@@ -1,0 +1,70 @@
+.container-fluid{
+    font-family: 'Poppins', sans-serif;
+}
+
+.he1
+{
+    background-image: url("../assets/img/download.jpg");
+}
+
+.searchh1{
+    display: inline-block;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.dropdown-content{
+	display: none;
+    position: absolute;
+    right: 20px;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 40;
+}
+
+.dropdown-content a{
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	background-color: white;
+}
+
+.dropdown-content a:hover {
+	background-color: #cecece;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+footer{
+	color: white;
+    background-color: black;
+    box-shadow: 2px 2px 5px grey;
+	padding: 40px;
+}
+
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+    color: black;
+}
+
+.foot li a{
+	color: white;
+}
+
+nav{
+	background-color: whitesmoke;
+}
+
+.foot li{
+	border-bottom: solid 2px #cecece;
+}
+
+.foot li :hover{
+	background-color: gray;
+}

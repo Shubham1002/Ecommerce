@@ -1,0 +1,19 @@
+.mainhead{
+    text-align: center; 
+    padding: 50px; 
+    font-size: xx-large;
+    border-bottom: #cecece 2px solid;
+}
+
+li{
+    list-style-type: none;
+    margin: 1rem;
+    font-size: small;
+    border-bottom: 2px solid #cecece;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,47 @@
+<div>
+    <h1>My Account</h1>
+    <div>
+        <h3>Personel Info</h3>
+        <div class="col-md-1"></div>
+        <ul class="col-md-4" style="text-align: center;">
+            <li>Name</li>
+            <li>E-Mail</li>
+            <li>Phone Number</li>
+            <li>Age</li>
+        </ul>
+        <ul class="col-md-1">
+            <li>:</li>
+            <li>:</li>
+            <li>:</li>
+            <li>:</li>
+        </ul>
+        <ul class="col-md-4">
+            <li>{{custdata.cname}}</li>
+            <li>{{custdata.cemail}}</li>
+            <li>{{custdata.cphno}}</li>
+            <li>{{custdata.cage}}</li>
+        </ul>
+        <div class="col-md-2"></div>
+    </div>
+    <div>
+        <h3>Address Details</h3>
+        <div class="col-md-1"></div>
+        <ul class="col-md-4" style="text-align: center;">
+            <li>Address Line 1</li>
+            <li>Address Line 2</li>
+            <li>City</li>
+            <li>District</li>
+            <li>State</li>
+            <li>Country</li>
+        </ul>
+        <ul class="col-md-5">
+            <li>{{custdata.address.address1}}</li>
+            <li>{{custdata.address.address2}}</li>
+            <li>{{custdata.address.city.cityName}}</li>
+            <li>{{custdata.address.district}}</li>
+            <li>{{custdata.address.city.state.stateName}} ({{custdata.address.city.state.stateId}})</li>
+            <li>{{custdata.address.city.state.country.countryName}} ({{custdata.address.city.state.country.countryId}})</li>
+        </ul>
+        <div class="col-md-2"></div>
+    </div>
+</div>

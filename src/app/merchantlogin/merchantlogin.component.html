@@ -1,0 +1,98 @@
+<div class="container-fluid">
+    <!-- <form [formGroup]="frmcategory" (ngSubmit)="createcategory()">
+        <div class="form-group">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <p>CatName  :</p>
+            </div>
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="catName" formControlName="catName">
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <p>CatImg :</p>
+            </div>
+            <div class="col-md-3">
+                <input type="file" class="form-control" formControlName="catImg"/>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+      </div><br>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <input type="submit" value="Create" class="btn btn-warning"/>
+                </div>
+            </div>
+        </div>
+      </form> -->
+
+      <br><br>
+      <form [formGroup]="frmsubcategory" (ngSubmit)="createsubcategory()">
+        <div formGroupName="cat">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-1">
+                        <p>cat  :</p>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" class="form-control" placeholder="cat" formControlName="catId">
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+              </div>
+        </div>
+        <div class="form-group">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <p>SubCatName  :</p>
+            </div>
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="subcatName" formControlName="subcatName">
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <p>SubCatDesc  :</p>
+            </div>
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="subcatDesc" formControlName="subcatDesc">
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-1">
+                <p>subCatImg :</p>
+            </div>
+            <div class="col-md-3">
+                <input type="file" class="form-control" formControlName="subcatImg"/>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+      </div><br>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <input type="submit" value="Create" class="btn btn-warning"/>
+                </div>
+            </div>
+        </div>
+      </form>
+</div>

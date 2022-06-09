@@ -1,0 +1,85 @@
+<div class="container-fluid">
+  <div class="row he1">
+    <header class="col-md-3">
+      <img src="../assets/img/techiart Logo1.gif" width="100px" style="margin: 20px;">
+    </header>
+    <div class="col-md-4">
+      <form>
+        <div class="form-group" style="padding-top: 30px;">
+          <input type="search" class="form-control" placeholder="Search" name="search" [(ngModel)]="search123" (ngModelChange)="search()"/>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-5">
+     <div *ngIf="cust == null">
+      <ul class="nav justify-content-end" style="padding: 20px;">
+        <li style="border-right: 2px solid black;"><a class="nav-link" [routerLink]="['/login']">Login</a></li>
+        <li><a class="nav-link" [routerLink]="['/signup']">Sign Up</a></li>
+      </ul>
+     </div>
+     <div *ngIf="cust !== null">
+      <ul class="nav justify-content-end" style="padding: 20px;">
+        <li style="border-right: 2px solid black;"><a class="nav-link" [routerLink]="['/myaccount']">My account</a></li>
+        <li><a class="nav-link" (click)="signout()">Sign Out</a></li>
+      </ul>
+     </div>
+     <div *ngIf="cust !== null" style="margin-left: 400px; margin-top: 30px;">
+       <h5>welcome , {{custdata.cname}}</h5>
+     </div>
+    </div>
+  </div>
+  <nav class="row">
+    <div class="col-md-6">
+      <ul class="nav justify-content-lg-start">
+      <li><a class="nav-link" [routerLink]="['/home']"><span class="material-icons">
+        home
+        </span></a></li>
+        <li *ngFor="let c of cat" class="dropdown">
+          <a style="font-size: medium; text-transform: uppercase;" class="nav-link">{{c.catName}}</a>
+          <!-- <div class="dropdowb-content">
+            <ul>
+              <li *ngFor="let s of subcat">
+                <a>{{s.subcatName}}</a>
+              </li>
+            </ul>
+          </div> -->
+        </li>
+    </ul>
+    </div>
+    <div class="col-md-6">
+      <ul class="nav justify-content-end">
+        <li class="dropdown">
+          <a class="nav-link"><span class="material-icons">
+            reorder
+            </span></a>
+          <div class="dropdown-content">
+            <a class="nav-link" [routerLink]="['/aboutus']">About us</a>
+            <a class="nav-link" [routerLink]="['/support']">SUPPORT</a>
+            <a class="nav-link" [routerLink]="['/merchantlogin']">MERCHANT LOGIN</a>
+          </div>
+      </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
+  <footer class="row">
+    <div class="col-md-2">
+      <ul class="foot">
+        <li><a class="nav-link" [routerLink]="['/aboutus']">ABOUT US</a></li>
+       <li><a class="nav-link" [routerLink]="['/support']">SUPPORT</a></li>
+       <li><a class="nav-link" [routerLink]="['/merchantlogin']">MERCHANT LOGIN</a></li>
+       <li><a class="nav-link" [routerLink]="['/companyuse']">COMPANY USE</a></li>
+      </ul>
+    </div>
+    <div class="col-md-7" style="text-align: center;">
+      <h3>CONTACT DETAILS</h3><br>
+          <a>Panipat Institute of Engineering & Technology<br>70 Milestone, Grand Trunk Rd, Samalkha, Haryana ( Pin : 132102 ), India</a><br><br>
+          <a>E-MAIL ID : squashersbug@gmail.com</a><br><br>
+    </div>
+    <div class="col-md-3">
+      <iframe src="https://maps.google.com/maps?q=P.I.E.T&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </footer>
+</div>
